@@ -1,0 +1,25 @@
+/*
+ * EXTERNAL_INT_CONFG.h
+ *
+ * Created: 3/16/2022 5:40:29 AM
+ *  Author: manni
+ */ 
+
+
+#ifndef EXTERNAL_INT_CONFG_H_
+#define EXTERNAL_INT_CONFG_H_
+
+
+#define		LOW_LEVEL_MODE					0
+#define		RISING_EDGE_MODE				1
+#define		FALLING_EDGE_MODE				2
+#define		ANY_LOGICAL_CHANGE				3
+/*
+#define			EXTERNAL_INT0_TRIGGER_MODE			ANY_LOGICAL_CHANGE
+#define			EXTERNAL_INT1_TRIGGER_MODE			ANY_LOGICAL_CHANGE
+#define			EXTERNAL_INT2_TRIGGER_MODE			FALLING_EDGE_MODE
+*/
+
+
+
+#endif /* EXTERNAL_INT_CONFG_H_ */

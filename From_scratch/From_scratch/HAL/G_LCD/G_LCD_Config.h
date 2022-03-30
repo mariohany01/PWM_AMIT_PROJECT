@@ -11,7 +11,7 @@
 #include <util/delay.h>		/* Include delay header file */
 #include <avr/pgmspace.h>
 #include <stdio.h>			/* Include std i/o library file */
-#include "Font_Header.h"
+#include "../../LIB/Font_Header.h"
 
 
 #define Data_Port			PORTA		/* Define data port for GLCD */

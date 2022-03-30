@@ -120,33 +120,110 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BIT_MATH.h">
+    <Compile Include="APP\APP_G_LCD.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="Font_Header.h">
+    <Compile Include="APP\APP_SEVEN_SEGMENT.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="G_LCD.c">
+    <Compile Include="APP\LCD_APP.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="G_LCD.h">
+    <Compile Include="APP\LED.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="G_LCD_Config.h">
+    <Compile Include="APP\PUSH_BUTTON.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="Image.h">
+    <Compile Include="APP\PUSH_BUTTON_2.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="LCD_16x2_C_file.c">
+    <Compile Include="APP\SEVEN_SEG_FROM_TO.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="LCD_16x2_C_file.h">
+    <Compile Include="HAL\G_LCD\G_LCD.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\G_LCD\G_LCD.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\G_LCD\G_LCD_Config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\G_LCD\Image.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\LCD\LCD_16x2_C_file.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\LCD\LCD_16x2_C_file.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\SEVEN_SEGMENT\SEVEN_SEGMENT.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\SEVEN_SEGMENT\SEVEN_SEGMENT.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LIB\BIT_MATH.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LIB\Font_Header.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LIB\STD_types.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="MCAL\DIO\DIO.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\DIO\DIO.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\DIO\DIO_REG.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\DIO\DIO_TYPES.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\EXTERNAL_INT\EXTERNAL_INT.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\EXTERNAL_INT\EXTERNAL_INT.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\EXTERNAL_INT\EXTERNAL_INT_CONFG.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TIMER_00\Timer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TIMER_00\Timer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TIMER_00\Timer_Confg.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="APP" />
+    <Folder Include="HAL" />
+    <Folder Include="HAL\G_LCD" />
+    <Folder Include="HAL\LCD" />
+    <Folder Include="HAL\SEVEN_SEGMENT" />
+    <Folder Include="LIB" />
+    <Folder Include="MCAL" />
+    <Folder Include="MCAL\DIO" />
+    <Folder Include="MCAL\EXTERNAL_INT" />
+    <Folder Include="MCAL\TIMER_00" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HAL\SEVEN_SEGMENT\New Text Document.txt">
+      <SubType>compile</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>

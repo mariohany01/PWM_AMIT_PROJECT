@@ -1,7 +1,6 @@
 /*
  * LCD_16x2_C_file.c
- * http://www.electronicwings.com
- *
+
  */
 
 

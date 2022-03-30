@@ -1,6 +1,6 @@
 /*
- * ATmega 16 frequency and duty cycle measurment using input capture
- * www.electronicwings.com
+
+		Main code
  */
 
 
@@ -9,17 +9,17 @@
 #include <util/delay.h>
 #include <avr/interrupt.h>
 #include <stdlib.h>
-#include "LCD_16x2_C_file.h"
-#include "BIT_MATH.h"
-#include "G_LCD.h"
-#include "Image.h"
+#include "HAL\LCD/LCD_16x2_C_file.h"
+#include "LIB\BIT_MATH.h"
+#include "HAL\G_LCD\G_LCD.h"
+#include "HAL\G_LCD\Image.h"
 
 int main ( )
 {
 	unsigned int a,b,c,high,period;
 	char frequency[14],duty_cy[7];
 
-	int Duty_cycle = 99 ;
+	int Duty_cycle = 12 ;
 	
 	GLCD_Init();
 	DDRD = 0xBF;		/* Pin Direction */
